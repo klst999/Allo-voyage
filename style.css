@@ -42,3 +42,9 @@ body {
             font-size: 14px;
             color: #777;
         }
+.logo {
+    max-width: 100%; /* Le logo ne dépassera jamais la largeur du conteneur */
+    height: auto;    /* Conserve les proportions de l'image */
+    display: block;  /* Centrer l'image (utile si elle déborde) */
+    margin: 0 auto;  /* Centrer horizontalement */
+}
