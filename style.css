@@ -1,50 +1,149 @@
+/* Global */
 body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-        }
-        .container {
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        .logo {
-            width: 100px;
-            margin-bottom: 20px;
-        }
-        h1 {
-            font-size: 24px;
-            color: #333;
-        }
-        .reserve-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px 30px;
-            font-size: 18px;
-            color: #fff;
-            background-color: #007BFF;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .reserve-button:hover {
-            background-color: #0056b3;
-        }
-        .footer {
-            margin-top: 20px;
-            font-size: 14px;
-            color: #777;
-        }
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    text-align: center;
+}
+
+/* Container Principal */
+.container {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin: 30px auto;
+    width: 95%;
+    max-width: 1300px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* Logo */
 .logo {
-    max-width: 100%; /* Le logo ne dépassera jamais la largeur du conteneur */
-    height: auto;    /* Conserve les proportions de l'image */
-    display: block;  /* Centrer l'image (utile si elle déborde) */
-    margin: 0 auto;  /* Centrer horizontalement */
+    width: 120px;
+    margin-bottom: 25px;
+}
+
+/* En-tête */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 1.5rem 0;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Boutons de filtre */
+.filter-buttons {
+    margin: 30px 0;
+}
+
+.filter-buttons button {
+    margin: 12px;
+    padding: 12px 28px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 123, 255, 0.2);
+}
+
+.filter-buttons button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Cartes des compagnies */
+.company-card {
+    display: inline-block;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin: 25px;
+    padding: 30px;
+    text-align: center;
+    width: 320px;
+    transition: all 0.3s ease-in-out;
+}
+
+.company-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.company-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+    transition: all 0.3s ease-in-out;
+}
+
+.company-card img:hover {
+    transform: rotate(5deg);
+}
+
+/* Titres des compagnies */
+.company-card h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #333;
+}
+
+/* Icônes d'appel et WhatsApp */
+.icons button {
+    margin: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.icons button:first-child {
+    background-color: #28a745;
+    color: white;
+}
+
+.icons button:first-child:hover {
+    background-color: #218838;
+}
+
+.icons button:last-child {
+    background-color: #25D366;
+    color: white;
+}
+
+.icons button:last-child:hover {
+    background-color: #1da851;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .company-card {
+        width: 90%;
+    }
+
+    header {
+        font-size: 1.5rem;
+    }
+
+    .filter-buttons button {
+        font-size: 16px;
+        padding: 10px 24px;
+    }
 }
