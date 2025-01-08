@@ -46,7 +46,7 @@ header {
     display: flex;
     justify-content: center;
     gap: 15px;
-    flex-wrap: wrap; /* Gérer les petits écrans */
+    flex-wrap: wrap;
 }
 
 .filter-buttons button {
@@ -69,10 +69,11 @@ header {
 
 /* Section des compagnies */
 .companies {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
+    justify-items: center;
+    margin-top: 20px;
 }
 
 /* Cartes des compagnies */
@@ -97,20 +98,26 @@ header {
     margin-bottom: 15px;
     border-radius: 50%;
     border: 3px solid #007bff;
-    object-fit: cover;  /* Empêche la déformation des images */
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     transition: all 0.3s ease-in-out;
 }
 
-/* Placeholder si l'image ne se charge pas */
-.company-card img::before {
-    content: "❓";
+/* Gestion des images manquantes */
+.company-card img::after {
+    content: "🚫";  /* Icône ou texte par défaut */
     font-size: 60px;
-    line-height: 100px;
     color: #007bff;
-}
-
-.company-card img:hover {
-    transform: rotate(5deg);
+    display: inline-block;
+    margin-top: -100px;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    border: 3px solid #007bff;
+    border-radius: 50%;
+    background-color: #f0f2f5;
 }
 
 /* Titres des compagnies */
@@ -172,6 +179,6 @@ header {
     }
 
     .icons button {
-        width: 100%;  /* Pleine largeur sur petits écrans */
+        width: 100%;
     }
 }
