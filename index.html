@@ -3,25 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <title>Allo Je Voyage</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3284182507492867"
-     crossorigin="anonymous"></script>
+    <title>Allojevoyage - Réservations</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="container">
-        <img src="logo.PNG" alt="Allo Voyage Logo" class="logo">
-       <h1>Bienvenue sur Allo Je Voyage</h1>
-       <h4>Réservez vos billets de voyage partout à Bamako sans bouger de chez vous!!</h4>
-      <a href="https://wa.me/22367080555?text=Je%20souhaite%20r%C3%A9server%20un%20voyage"class="reserve-button">Je réserve</a>
+        <img src="Images/Logo.PNG" alt="Allo Voyage Logo" class="logo">
+    <header>
+        <h2>Allojevoyage</h2>
+        <p>Renseingez-Vous</p>
+        <center><p>&</p></center>
+        <p>Réservez votre voyage en un clic</p>
+    </header>
 
+    <div class="filter-buttons">
+        <button onclick="filterCompanies('all')">TOUT</button>
+        <button onclick="filterCompanies('bus')">🚌 Cars</button>
+        <button onclick="filterCompanies('airplane')">✈️ Avions</button>
     </div>
-    <footer class="footer">
-            <div style="background-color: #f8d7da; color: #721c24; padding: 15px; border: 1px solid #f5c6cb; border-radius: 5px; text-align: center; margin-bottom: 20px;">
-    <strong>Important :</strong> Un frais supplémentaire de <strong>500 FCFA</strong> sera appliqué comme frais de traitement pour tout achat de billet sur notre site.
+
+    <section class="container">
+        <!-- Compagnies de Cars -->
+        <div class="company-card bus">
+            <img src="Images/diarra.PNG" alt="Bus Icon">
+            <h3>Diarra Transport</h3>
+            <div class="icons">
+                <button onclick="makeChoice(1, 'call')">📞 Appeler</button>
+                <button onclick="makeChoice(1, 'whatsapp')">💬 WhatsApp</button>
+            </div>
+        </div>
+        <div class="company-card bus">
+            <img src="Images/sonef.PNG" alt="Bus Icon">
+            <h3>Sonef Transport</h3>
+            <div class="icons">
+                <button onclick="makeChoice(2, 'call')">📞 Appeler</button>
+                <button onclick="makeChoice(2, 'whatsapp')">💬 WhatsApp</button>
+            </div>
+        </div>
+        <div class="company-card bus">
+            <img src="Images/tilemsi.JPG" alt="Bus Icon">
+            <h3>Tilemsi Transport</h3>
+            <div class="icons">
+                <button onclick="makeChoice(3, 'call')">📞 Appeler</button>
+                <button onclick="makeChoice(3, 'whatsapp')">💬 WhatsApp</button>
+            </div>
+        </div>
+        <div class="company-card bus">
+            <img src="Images/Nour.JPG" alt="Bus Icon">
+            <h3>Nour Transport</h3>
+            <div class="icons">
+                <button onclick="makeChoice(4, 'call')">📞 Appeler</button>
+                <button onclick="makeChoice(4, 'whatsapp')">💬 WhatsApp</button>
+            </div>
+        </div>
+        <div class="company-card bus">
+            <img src="Images/Africa.PNG" alt="Bus Icon">
+            <h3>Africa Tour</h3>
+            <div class="icons">
+                <button onclick="makeChoice(5, 'call')">📞 Appeler</button>
+                <button onclick="makeChoice(5, 'whatsapp')">💬 WhatsApp</button>
+            </div>
+        </div>
+        <div class="company-card bus">
+            <img src="Images/Folona.JPG" alt="Bus Icon">
+            <h3>Folona Transport</h3>
+            <div class="icons">
+                <button onclick="makeChoice(6, 'call')">📞 Appeler</button>
+                <button onclick="makeChoice(6, 'whatsapp')">💬 WhatsApp</button>
+            </div>
+        </div>
+        <div class="company-card bus">
+            <img src="Images/Mande.jpg" alt="Bus Icon">
+            <h3>Mande Transport</h3>
+            <div class="icons">
+                <button onclick="makeChoice(7, 'call')">📞 Appeler</button>
+                <button onclick="makeChoice(7, 'whatsapp')">💬 WhatsApp</button>
+            </div>
+        </div>
+        <div class="company-card bus">
+            <img src="Images/Somatra.JPG" alt="Bus Icon">
+            <h3>Somatra Transport</h3>
+            <div class="icons">
+                <button onclick="makeChoice(8, 'call')">📞 Appeler</button>
+                <button onclick="makeChoice(8, 'whatsapp')">💬 WhatsApp</button>
+            </div>
+        </div>
+        <div class="company-card bus">
+            <img src="Images/Rimbo.PNG" alt="Bus Icon">
+            <h3>Rimbo Transport</h3>
+            <div class="icons">
+                <button onclick="makeChoice(9, 'call')">📞 Appeler</button>
+                <button onclick="makeChoice(9, 'whatsapp')">💬 WhatsApp</button>
+            </div>
+        </div>
+        <div class="company-card bus">
+            <img src="Images/Bani.JPG" alt="Bus Icon">
+            <h3>Bani Transport</h3>
+            <div class="icons">
+                <button onclick="makeChoice(10, 'call')">📞 Appeler</button>
+                <button onclick="makeChoice(10, 'whatsapp')">💬 WhatsApp</button>
+            </div>
+        </div>
+        <div class="company-card bus">
+            <img src="Images/Ctac.JPG" alt="Bus Icon">
+            <h3>CTAC Transport</h3>
+            <div class="icons">
+                <button onclick="makeChoice(11, 'call')">📞 Appeler</button>
+                <button onclick="makeChoice(11, 'whatsapp')">💬 WhatsApp</button>
+            </div>
+        </div>
+        <div class="company-card bus">
+            <img src="Images/Star.JPG" alt="Bus Icon">
+            <h3>Africa Star Transport</h3>
+            <div class="icons">
+                <button onclick="makeChoice(12, 'call')">📞 Appeler</button>
+                <button onclick="makeChoice(12, 'whatsapp')">💬 WhatsApp</button>
+            </div>
+        </div>
+        <div class="company-card bus">
+            <img src="Images/Benso.jpg" alt="Bus Icon">
+            <h3>Benso Transport</h3>
+            <div class="icons">
+                <button onclick="makeChoice(13, 'call')">📞 Appeler</button>
+                <button onclick="makeChoice(13, 'whatsapp')">💬 WhatsApp</button>
+            </div>
+        </div>
+        <div class="company-card bus">
+            <img src="Images/Gana.JPG" alt="Bus Icon">
+            <h3>Gana Transport</h3>
+            <div class="icons">
+                <button onclick="makeChoice(14, 'call')">📞 Appeler</button>
+                <button onclick="makeChoice(14, 'whatsapp')">💬 WhatsApp</button>
+            </div>
+        </div>
+        <!-- Ajoutez ici les autres compagnies de bus... -->
+
+        <!-- Compagnies Aériennes -->
+        <div class="company-card airplane">
+            <img src="Images/Sky.JPG" alt="Airplane Icon">
+            <h3>Sky Mali</h3>
+            <div class="icons">
+                <button onclick="makeChoice(15, 'call')">📞 Appeler</button>
+                <button onclick="makeChoice(15, 'whatsapp')">💬 WhatsApp</button>
+            </div>
+        </div>
+        <div class="company-card airplane">
+            <img src="Images/Air France.JPG" alt="Airplane Icon">
+            <h3>Air France</h3>
+            <div class="icons">
+                <button onclick="makeChoice(16, 'call')">📞 Appeler</button>
+                <button onclick="makeChoice(16, 'whatsapp')">💬 WhatsApp</button>
+            </div>
+        </div>
+        <div class="company-card airplane">
+    <img src="Images/Éthiopie.PNG" alt="Ethiopian Airlines">
+    <h3>Ethiopian Airlines</h3>
+    <div class="icons">
+        <button onclick="makeChoice(17, 'call')">📞 Appeler</button>
+        <button onclick="makeChoice(17, 'whatsapp')">💬 WhatsApp</button>
+    </div>
 </div>
-        &copy; 2024 Allo Voyage. Tous droits réservés.
-    </footer>
+ <div class="company-card airplane">
+    <img src="Images/Côte.JPG" alt="Air Côte d'Ivoire">
+    <h3>Air Côte d'Ivoire</h3>
+    <div class="icons">
+        <button onclick="makeChoice(18, 'call')">📞 Appeler</button>
+        <button onclick="makeChoice(18, 'whatsapp')">💬 WhatsApp</button>
+    </div>
+</div>
+
+<div class="company-card airplane">
+    <img src="Images/Sénégal.JPG" alt="Air Sénégal">
+    <h3>Air Sénégal</h3>
+    <div class="icons">
+        <button onclick="makeChoice(19, 'call')">📞 Appeler</button>
+        <button onclick="makeChoice(19, 'whatsapp')">💬 WhatsApp</button>
+    </div>
+</div>
+
+<div class="company-card airplane">
+    <img src="Images/Burkina.PNG" alt="Air Burkina">
+    <h3>Air Burkina</h3>
+    <div class="icons">
+        <button onclick="makeChoice(20, 'call')">📞 Appeler</button>
+        <button onclick="makeChoice(20, 'whatsapp')">💬 WhatsApp</button>
+    </div>
+</div>
+
+<div class="company-card airplane">
+    <img src="Images/Mauritanie.JPG" alt="Air Mauritanie">
+    <h3>Air Mauritanie</h3>
+    <div class="icons">
+        <button onclick="makeChoice(21, 'call')">📞 Appeler</button>
+        <button onclick="makeChoice(21, 'whatsapp')">💬 WhatsApp</button>
+    </div>
+</div>
+
+<div class="company-card airplane">
+    <img src="Images/Algérie.PNG" alt="Air Algérie">
+    <h3>Air Algérie</h3>
+    <div class="icons">
+        <button onclick="makeChoice(22, 'call')">📞 Appeler</button>
+        <button onclick="makeChoice(22, 'whatsapp')">💬 WhatsApp</button>
+    </div>
+</div>
+
+<div class="company-card airplane">
+    <img src="Images/Maroc.PNG" alt="Royal Air Maroc">
+    <h3>Royal Air Maroc</h3>
+    <div class="icons">
+        <button onclick="makeChoice(23, 'call')">📞 Appeler</button>
+        <button onclick="makeChoice(23, 'whatsapp')">💬 WhatsApp</button>
+    </div>
+</div>
+        <!-- Ajoutez ici les autres compagnies aériennes... -->
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
