@@ -43,10 +43,13 @@ header {
 /* Boutons de filtre */
 .filter-buttons {
     margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; /* Gérer les petits écrans */
 }
 
 .filter-buttons button {
-    margin: 12px;
     padding: 12px 28px;
     font-size: 18px;
     font-weight: 500;
@@ -64,13 +67,19 @@ header {
     transform: translateY(-3px);
 }
 
+/* Section des compagnies */
+.companies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
 /* Cartes des compagnies */
 .company-card {
-    display: inline-block;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    margin: 25px;
     padding: 30px;
     text-align: center;
     width: 320px;
@@ -88,7 +97,16 @@ header {
     margin-bottom: 15px;
     border-radius: 50%;
     border: 3px solid #007bff;
+    object-fit: cover;  /* Empêche la déformation des images */
     transition: all 0.3s ease-in-out;
+}
+
+/* Placeholder si l'image ne se charge pas */
+.company-card img::before {
+    content: "❓";
+    font-size: 60px;
+    line-height: 100px;
+    color: #007bff;
 }
 
 .company-card img:hover {
@@ -102,9 +120,15 @@ header {
     color: #333;
 }
 
-/* Icônes d'appel et WhatsApp */
+/* Boutons d'action (Appeler et WhatsApp) */
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
 .icons button {
-    margin: 10px;
     padding: 12px 20px;
     font-size: 16px;
     font-weight: 500;
@@ -145,5 +169,9 @@ header {
     .filter-buttons button {
         font-size: 16px;
         padding: 10px 24px;
+    }
+
+    .icons button {
+        width: 100%;  /* Pleine largeur sur petits écrans */
     }
 }
