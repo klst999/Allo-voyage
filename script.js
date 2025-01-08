@@ -32,7 +32,7 @@ function makeChoice(companyId, choice) {
         14: "+223 20 21 99 30", // Gana Transport
         15: "+22370771033", // Sky Mali
         16: "+22320700355", // Air France
-        17: "+22301234567", // Ethiopian Airlines
+        17: "+22320226036", // Ethiopian Airlines
         18: "+22320221727", // Air Côte d'Ivoire 
         19: "+22320222100", // Air Sénégal 
         20: "+22366911405", // Air Mauritanie
