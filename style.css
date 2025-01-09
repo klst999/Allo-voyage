@@ -182,3 +182,138 @@ header {
         width: 100%;
     }
 }
+/* Styles globaux */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Couleur de fond douce */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Conteneur principal */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Titres principaux */
+section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0056b3; /* Bleu pour les titres */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Sous-titres */
+section h2 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #333;
+    border-left: 4px solid #007bff;
+    padding-left: 10px;
+}
+
+/* Paragraphes */
+section p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+/* Listes */
+section ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style: disc;
+}
+
+section ul li {
+    margin: 5px 0;
+}
+
+/* Liens */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Formulaire de contact */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form textarea,
+form button {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+form input:focus,
+form textarea:focus,
+form button:hover {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form textarea {
+    resize: none;
+}
+
+form button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    section {
+        padding: 15px 20px;
+    }
+
+    section h1 {
+        font-size: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        font-size: 0.9rem;
+    }
+}
+
