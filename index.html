@@ -6,28 +6,47 @@
     <title>Allojevoyage - Réservations</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-
+    <!-- Ajouter FontAwesome pour les icônes -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <img src="logo.PNG" alt="Allo Voyage Logo" class="logo">
-    <header>
-        <h2>Allojevoyage</h2>
-        <p>Renseingez-Vous</p>
-        <center><p>&</p></center>
-        <p>Réservez votre voyage en un clic</p>
-    </header>
-
-    <div class="filter-buttons">
-        <button onclick="filterCompanies('all')">TOUT</button>
-        <button onclick="filterCompanies('bus')">🚌 Cars</button>
-        <button onclick="filterCompanies('airplane')">✈️ Avions</button>
+            <!-- Menu de navigation -->
+            <header>
+            <nav>
+                <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+                <a href="À propos.html"><i class="fas fa-info-circle"></i> Propos</a>
+                <a href="Compagnie.html"><i class="fas fa-building"></i> Compagnies</a>
+                <a href="mission.html"><i class="fas fa-rocket"></i> Notre mission</a>
+                <a href="contact.html"><i class="fas fa-phone-alt"></i> Contacts</a>
+            </nav>
+        </header>
+            <section class="allojv">
+            <h1>Allo Je Voyage </h1>
+                <p>Renseignez-vous & réservez votre voyage en un clic</p>
+            </section>
+<!-- Section d'introduction -->
+        <section class="intro">
+                         <div class="container">
+        <!-- Logo -->
+        <img src="Images/logo.PNG" alt="Allo Voyage Logo" class="logo">
+            <h3>Bienvenue sur Allojevoyage</h3>
+            <p>Allojevoyage est votre plateforme idéale pour réserver facilement vos voyages en bus ou en avion. 
+            Naviguez à travers nos différentes compagnies pour trouver l'option qui correspond à vos besoins. 
+            Faites un choix rapide et sûr grâce à nos options de contact direct.</p>
+        </section>
     </div>
-
+</body>
+        <!-- Section Boutons de filtre -->
+        <div class="filter-buttons">
+            <button onclick="filterCompanies('all')">TOUT</button>
+            <button onclick="filterCompanies('bus')">🚌 Cars</button>
+            <button onclick="filterCompanies('airplane')">✈️ Avions</button>
+        </div>
+        <!-- Section Compagnies -->
     <section class="container">
         <!-- Compagnies de Cars -->
         <div class="company-card bus">
-            <img src="diarra.PNG" alt="Bus Icon">
+            <img src="Images/diarra.PNG" alt="Bus Icon">
             <h3>Diarra Transport</h3>
             <div class="icons">
                 <button onclick="makeChoice(1, 'call')">📞 Appeler</button>
@@ -35,7 +54,7 @@
             </div>
         </div>
         <div class="company-card bus">
-            <img src="sonef.PNG" alt="Bus Icon">
+            <img src="Images/sonef.PNG" alt="Bus Icon">
             <h3>Sonef Transport</h3>
             <div class="icons">
                 <button onclick="makeChoice(2, 'call')">📞 Appeler</button>
@@ -43,7 +62,7 @@
             </div>
         </div>
         <div class="company-card bus">
-            <img src="tilemsi.JPG" alt="Bus Icon">
+            <img src="Images/tilemsi.JPG" alt="Bus Icon">
             <h3>Tilemsi Transport</h3>
             <div class="icons">
                 <button onclick="makeChoice(3, 'call')">📞 Appeler</button>
@@ -51,7 +70,7 @@
             </div>
         </div>
         <div class="company-card bus">
-            <img src="Nour.JPG" alt="Bus Icon">
+            <img src="Images/Nour.JPG" alt="Bus Icon">
             <h3>Nour Transport</h3>
             <div class="icons">
                 <button onclick="makeChoice(4, 'call')">📞 Appeler</button>
@@ -59,7 +78,7 @@
             </div>
         </div>
         <div class="company-card bus">
-            <img src="Africa.PNG" alt="Bus Icon">
+            <img src="Images/Africa.PNG" alt="Bus Icon">
             <h3>Africa Tour</h3>
             <div class="icons">
                 <button onclick="makeChoice(5, 'call')">📞 Appeler</button>
@@ -67,7 +86,7 @@
             </div>
         </div>
         <div class="company-card bus">
-            <img src="Folona.JPG" alt="Bus Icon">
+            <img src="Images/Folona.JPG" alt="Bus Icon">
             <h3>Folona Transport</h3>
             <div class="icons">
                 <button onclick="makeChoice(6, 'call')">📞 Appeler</button>
@@ -75,7 +94,7 @@
             </div>
         </div>
         <div class="company-card bus">
-            <img src="Mande.jpg" alt="Bus Icon">
+            <img src="Images/Mande.jpg" alt="Bus Icon">
             <h3>Mande Transport</h3>
             <div class="icons">
                 <button onclick="makeChoice(7, 'call')">📞 Appeler</button>
@@ -83,7 +102,7 @@
             </div>
         </div>
         <div class="company-card bus">
-            <img src="Somatra.JPG" alt="Bus Icon">
+            <img src="Images/Somatra.JPG" alt="Bus Icon">
             <h3>Somatra Transport</h3>
             <div class="icons">
                 <button onclick="makeChoice(8, 'call')">📞 Appeler</button>
@@ -91,7 +110,7 @@
             </div>
         </div>
         <div class="company-card bus">
-            <img src="Rimbo.PNG" alt="Bus Icon">
+            <img src="Images/Rimbo.PNG" alt="Bus Icon">
             <h3>Rimbo Transport</h3>
             <div class="icons">
                 <button onclick="makeChoice(9, 'call')">📞 Appeler</button>
@@ -99,7 +118,7 @@
             </div>
         </div>
         <div class="company-card bus">
-            <img src="Bani.JPG" alt="Bus Icon">
+            <img src="Images/Bani.JPG" alt="Bus Icon">
             <h3>Bani Transport</h3>
             <div class="icons">
                 <button onclick="makeChoice(10, 'call')">📞 Appeler</button>
@@ -107,7 +126,7 @@
             </div>
         </div>
         <div class="company-card bus">
-            <img src="Ctac.JPG" alt="Bus Icon">
+            <img src="Images/Ctac.JPG" alt="Bus Icon">
             <h3>CTAC Transport</h3>
             <div class="icons">
                 <button onclick="makeChoice(11, 'call')">📞 Appeler</button>
@@ -115,7 +134,7 @@
             </div>
         </div>
         <div class="company-card bus">
-            <img src="Star.JPG" alt="Bus Icon">
+            <img src="Images/Star.JPG" alt="Bus Icon">
             <h3>Africa Star Transport</h3>
             <div class="icons">
                 <button onclick="makeChoice(12, 'call')">📞 Appeler</button>
@@ -123,7 +142,7 @@
             </div>
         </div>
         <div class="company-card bus">
-            <img src="Benso.jpg" alt="Bus Icon">
+            <img src="Images/Benso.jpg" alt="Bus Icon">
             <h3>Benso Transport</h3>
             <div class="icons">
                 <button onclick="makeChoice(13, 'call')">📞 Appeler</button>
@@ -131,7 +150,7 @@
             </div>
         </div>
         <div class="company-card bus">
-            <img src="Gana.JPG" alt="Bus Icon">
+            <img src="Images/Gana.JPG" alt="Bus Icon">
             <h3>Gana Transport</h3>
             <div class="icons">
                 <button onclick="makeChoice(14, 'call')">📞 Appeler</button>
@@ -142,7 +161,7 @@
 
         <!-- Compagnies Aériennes -->
         <div class="company-card airplane">
-            <img src="Sky.JPG" alt="Airplane Icon">
+            <img src="Images/Sky.JPG" alt="Airplane Icon">
             <h3>Sky Mali</h3>
             <div class="icons">
                 <button onclick="makeChoice(15, 'call')">📞 Appeler</button>
@@ -150,7 +169,7 @@
             </div>
         </div>
         <div class="company-card airplane">
-            <img src="Air France.JPG" alt="Airplane Icon">
+            <img src="Images/Air France.JPG" alt="Airplane Icon">
             <h3>Air France</h3>
             <div class="icons">
                 <button onclick="makeChoice(16, 'call')">📞 Appeler</button>
@@ -158,7 +177,7 @@
             </div>
         </div>
         <div class="company-card airplane">
-    <img src="Ethiopie.PNG" alt="Ethiopian Airlines">
+    <img src="Images/Éthiopie.PNG" alt="Ethiopian Airlines">
     <h3>Ethiopian Airlines</h3>
     <div class="icons">
         <button onclick="makeChoice(17, 'call')">📞 Appeler</button>
@@ -166,7 +185,7 @@
     </div>
 </div>
  <div class="company-card airplane">
-    <img src="Cote.JPG" alt="Air Côte d'Ivoire">
+    <img src="Images/Côte.JPG" alt="Air Côte d'Ivoire">
     <h3>Air Côte d'Ivoire</h3>
     <div class="icons">
         <button onclick="makeChoice(18, 'call')">📞 Appeler</button>
@@ -175,7 +194,7 @@
 </div>
 
 <div class="company-card airplane">
-    <img src="Senegal.JPG" alt="Air Sénégal">
+    <img src="Images/Sénégal.JPG" alt="Air Sénégal">
     <h3>Air Sénégal</h3>
     <div class="icons">
         <button onclick="makeChoice(19, 'call')">📞 Appeler</button>
@@ -184,7 +203,7 @@
 </div>
 
 <div class="company-card airplane">
-    <img src="Burkina.PNG" alt="Air Burkina">
+    <img src="Images/Burkina.PNG" alt="Air Burkina">
     <h3>Air Burkina</h3>
     <div class="icons">
         <button onclick="makeChoice(20, 'call')">📞 Appeler</button>
@@ -193,7 +212,7 @@
 </div>
 
 <div class="company-card airplane">
-    <img src="Mauritanie.JPG" alt="Air Mauritanie">
+    <img src="Images/Mauritanie.JPG" alt="Air Mauritanie">
     <h3>Air Mauritanie</h3>
     <div class="icons">
         <button onclick="makeChoice(21, 'call')">📞 Appeler</button>
@@ -202,7 +221,7 @@
 </div>
 
 <div class="company-card airplane">
-    <img src="Algerie.PNG" alt="Air Algérie">
+    <img src="Images/Algérie.PNG" alt="Air Algérie">
     <h3>Air Algérie</h3>
     <div class="icons">
         <button onclick="makeChoice(22, 'call')">📞 Appeler</button>
@@ -211,7 +230,7 @@
 </div>
 
 <div class="company-card airplane">
-    <img src="Maroc.PNG" alt="Royal Air Maroc">
+    <img src="Images/Maroc.PNG" alt="Royal Air Maroc">
     <h3>Royal Air Maroc</h3>
     <div class="icons">
         <button onclick="makeChoice(23, 'call')">📞 Appeler</button>
@@ -220,76 +239,6 @@
 </div>
         <!-- Ajoutez ici les autres compagnies aériennes... -->
     </section>
-        <section>
-  <h1>À propos de AlloJeVoyage</h1>
-  <p>Bienvenue sur AlloJeVoyage, votre guide de voyage ultime pour explorer les meilleures destinations à travers le monde.</p>
-  <p>Notre objectif est de fournir des informations fiables, des astuces pratiques et des recommandations pour vous aider à planifier vos voyages en toute simplicité.</p>
-  <p>Que vous soyez un voyageur expérimenté ou que ce soit votre première aventure, nous sommes là pour rendre votre expérience mémorable.</p>
-  <h2>Notre mission</h2>
-  <p>Faciliter l'organisation de voyages pour tous en proposant des ressources adaptées à vos besoins.</p>
-  <h2>Pourquoi choisir AlloJeVoyage ?</h2>
-  <ul>
-    <li>Informations actualisées et détaillées.</li>
-    <li>Conseils personnalisés pour chaque type de voyageur.</li>
-    <li>Une équipe passionnée par le monde du voyage.</li>
-  </ul>
-</section>
-   <section>
-  <h1>Contactez-nous</h1>
-  <p>Pour toute question, suggestion ou demande d'information, n'hésitez pas à nous contacter.</p>
-  <h2>Coordonnées</h2>
-  <ul>
-    <li>Email : <a href="allojevoyage@gmail.com">allojevoyage@gmail.com</a></li>
-    <li>Téléphone : <a href="tel:+22367080555">+22367080555</a></li>
-    <li>Adress: Bamako(Mali)</li>
-  </ul>
-  <h2>Formulaire de contact</h2>
-  <form action="mailto:contact@allojevoyage.fr" method="post" enctype="text/plain">
-    <label for="name">Nom :</label>
-    <input type="text" id="name" name="name" required>
-    <label for="email">Email :</label>
-    <input type="email" id="email" name="email" required>
-    <label for="message">Message :</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
-</section>
-<section>
-  <h1>Politique de confidentialité</h1>
-  <p>Chez AlloJeVoyage, nous accordons une grande importance à la protection de vos données personnelles.</p>
-  <h2>1. Collecte des données</h2>
-  <p>Nous collectons les informations suivantes lorsque vous utilisez notre site :</p>
-  <ul>
-    <li>Nom, prénom et email lorsque vous remplissez le formulaire de contact.</li>
-    <li>Données anonymes de navigation (via des cookies).</li>
-  </ul>
-  <h2>2. Utilisation des données</h2>
-  <p>Vos données sont utilisées pour :</p>
-  <ul>
-    <li>Répondre à vos demandes via le formulaire de contact.</li>
-    <li>Améliorer l'expérience utilisateur grâce à des analyses statistiques.</li>
-  </ul>
-  <h2>3. Partage des données</h2>
-  <p>Nous ne partageons pas vos informations personnelles avec des tiers, sauf si requis par la loi.</p>
-  <h2>4. Vos droits</h2>
-  <p>Vous avez le droit d'accéder, de rectifier ou de supprimer vos données. Contactez-nous à <a href="mailto:contact@allojevoyage.fr">allojevoyage@gmail.com</a> pour toute demande.</p>
-</section>
-<section>
-  <h1>Conditions d’utilisation</h1>
-  <p>Bienvenue sur AlloJeVoyage. En utilisant notre site, vous acceptez les règles suivantes :</p>
-  <h2>1. Utilisation du contenu</h2>
-  <p>Le contenu de ce site est fourni à titre informatif. Vous ne pouvez pas reproduire ou distribuer nos articles sans autorisation écrite.</p>
-  <h2>2. Responsabilité</h2>
-  <p>Nous faisons de notre mieux pour fournir des informations exactes. Cependant, nous ne sommes pas responsables des erreurs ou omissions dans les contenus publiés.</p>
-  <h2>3. Comportement des utilisateurs</h2>
-  <ul>
-    <li>Respectez les autres utilisateurs lors de l'utilisation des commentaires ou des forums.</li>
-    <li>Ne publiez pas de contenu offensant, illégal ou inapproprié.</li>
-  </ul>
-  <h2>4. Modifications des conditions</h2>
-  <p>Ces conditions peuvent être mises à jour à tout moment. Consultez cette page régulièrement.</p>
-</section>     
-
     <script src="script.js"></script>
 </body>
 </html>
