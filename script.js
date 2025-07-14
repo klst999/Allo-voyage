@@ -34,7 +34,7 @@ function makeChoice(companyId, choice) {
         16: "+22320700355", // Air France
         17: "+22320226036", // Ethiopian Airlines
         18: "+22320221727", // Air Côte d'Ivoire 
-        19: "+22320222100", // Air Sénégal 
+        19: "+22372110202", // Air Sénégal 
         20: "+22366911405", // Air Mauritanie
         21: "+22320210774", // Air Burkina 
         22: "+22320223159", // Air Algérie 
